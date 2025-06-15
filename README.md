@@ -5,6 +5,27 @@ React + Vite + OpenAI + RAG によるローカル動作型 GPT UI。
 
 ---
 
+
+## 📁 プロジェクト構成
+
+| パス | 説明 |
+|------|------|
+| `src/components/` | チャットUI（Message, ChatBox） |
+| `src/rag/knowledge.json` | 教義データ（RAG対象） |
+| `src/rag/searchRag.js` | Fuse.js検索ロジック |
+| `src/api/openai.js` | GPT API呼び出しロジック |
+| `.env.local` | 環境変数（OpenAIキー）※GitHubには含めない |
+| `vite.config.js` | Vite構成 |
+
+---
+
+## 🌐 公開URL（例）
+
+`https://kobato-gpt.vercel.app`
+
+
+
+
 ## 📁 構成ファイル一覧
 
 | パス                        | 説明                                         |
@@ -35,3 +56,7 @@ echo "VITE_OPENAI_API_KEY=sk-xxxxx" > .env.local
 
 # サーバー起動
 npm run dev
+
+
+
+---
